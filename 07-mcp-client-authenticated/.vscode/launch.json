@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (web)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/McpClientAuthenticated/bin/Debug/net10.0/McpClientAuthenticated.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/McpClientAuthenticated",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://localhost:5001;http://localhost:5000",
+        "Mcp__BaseUrl": "http://localhost:8080/mcp",
+        "Mcp__TimeoutSeconds": "120",
+        "OpenAI__ApiKey": "<OPENAI_API_KEY>",
+        "Entra__TenantId": "<AZURE_TENANT_ID>",
+        "Entra__ClientId": "<FRONTEND_CLIENT_ID>",
+        "Entra__ClientSecret": "<ENTRA_CLIENT_SECRET>",
+        "Entra__Audience": "api://<FRONTEND_CLIENT_ID>",
+        "Mcp__Scope": "api://<AZURE_CLIENT_ID>/mcp.tools"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach"
+    }
+  ]
+}
+

@@ -1,0 +1,12 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <div style={{ padding: '50px', color: 'white' }}>
+      <h1>MCP Chat Agent</h1>
+      <p>This is a test render without MSAL.</p>
+    </div>
+  </React.StrictMode>
+);

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "demo-server": {
+      "command": "dotnet",
+      "args": ["run", "--project", "src/McpServerStdio/McpServerStdio.csproj"]
+    }
+  }
+}

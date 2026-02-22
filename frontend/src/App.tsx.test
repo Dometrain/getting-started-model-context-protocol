@@ -1,0 +1,13 @@
+function App() {
+  return (
+    <div style={{ backgroundColor: '#0f172a', color: 'white', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyItems: 'center', textAlign: 'center', width: '100%' }}>
+      <div style={{ margin: 'auto' }}>
+        <h1>MCP Chat Agent</h1>
+        <p>If you see this, the basic rendering is working.</p>
+        <button onClick={() => window.location.reload()} style={{ padding: '10px 20px', cursor: 'pointer' }}>Reload</button>
+      </div>
+    </div>
+  )
+}
+
+export default App
